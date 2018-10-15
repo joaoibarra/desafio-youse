@@ -6,8 +6,6 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'kotlin-kapt'
 
-apply plugin: 'kotlin-allopen'
-
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -25,10 +23,6 @@ android {
         }
     }
 
-
-    allOpen {
-        annotation('com.joaoibarra.redditclient.Mockable')
-    }
 }
 
 dependencies {
